@@ -11,7 +11,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   cli:
-    github: mosop/cli
+    github: kalinon/cli.cr
 ```
 
 <a name="code_samples"></a>
