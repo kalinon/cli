@@ -1,10 +1,10 @@
 name: cli
-version: 0.7.0
+version: 0.7.1
 
 authors:
   - mosop
 
-crystal: 0.24.2
+crystal: 0.25.0
 
 dependencies:
   optarg:

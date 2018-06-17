@@ -3,7 +3,7 @@ module Cli
     # :nodoc:
     macro __get_supercommand_class(type = nil)
       {%
-        names = @type.name.split("::").map{|i| i.id}
+        names = @type.name.split("::").map { |i| i.id }
       %}
       {% if names.size >= 3 %}
         __get_supercommand_class2 ::{{names[0..-2].join("::").id}}, ::{{names[0..-3].join("::").id}}

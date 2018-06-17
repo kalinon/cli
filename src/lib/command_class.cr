@@ -30,11 +30,13 @@ module Cli
     end
 
     @abstract : Bool?
+
     def abstract?
       @abstract.not_nil!
     end
 
     @is_supercommand : Bool?
+
     def is_supercommand?
       @is_supercommand.not_nil!
     end
@@ -48,11 +50,13 @@ module Cli
     end
 
     @subcommand_option_model_definition : OptionModelDefinitions::Subcommand?
+
     def subcommand_option_model_definition
       @subcommand_option_model_definition ||= OptionModelDefinitions::Subcommand.new(self)
     end
 
     @snake_name : String?
+
     def snake_name
       @snake_name ||= StringInflection.snake(@name)
     end
@@ -91,12 +95,13 @@ module Cli
     end
 
     @global_name : String?
+
     def global_name
       @global_name ||= if sup = @supercommand
-        "#{sup.global_name} #{name}"
-      else
-        @name
-      end
+                         "#{sup.global_name} #{name}"
+                       else
+                         @name
+                       end
     end
 
     def run(previous, args)
@@ -145,6 +150,7 @@ module Cli
     end
 
     @default_title : String?
+
     def default_title
       @default_title ||= begin
         a = %w()

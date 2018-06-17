@@ -125,7 +125,7 @@ module Cli::Spec
         indent = " " * spaces
         s = s.to_s
         return "" if s.empty?
-        "\n" + s.split("\n").map{|i| "#{indent}#{i}"}.join("\n")
+        "\n" + s.split("\n").map { |i| "#{indent}#{i}" }.join("\n")
       end
     end
   end

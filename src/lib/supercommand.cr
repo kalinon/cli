@@ -13,7 +13,7 @@ module Cli
       {%
         s = aliased || name
         a = s.strip.split(" ")
-        a = a.map{|i| i.split("-").join("_").split("_").map{|j| j.capitalize}.join("")}
+        a = a.map { |i| i.split("-").join("_").split("_").map { |j| j.capitalize }.join("") }
       %}
 
       {% if default %}

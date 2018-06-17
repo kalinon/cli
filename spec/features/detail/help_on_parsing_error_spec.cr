@@ -11,6 +11,7 @@ module CliHelpOnParsingErrorFeatureDetail
 
   class Disabled < ::Cli::Command
     disable_help_on_parsing_error!
+
     class Options
       arg "url", required: true, desc: "a URL to be bookmarked"
     end

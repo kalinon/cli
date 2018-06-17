@@ -2,7 +2,7 @@
 
 Yet another Crystal library for building command-line interface applications.
 
-[![Build Status](https://travis-ci.org/mosop/cli.svg?branch=master)](https://travis-ci.org/mosop/cli)
+[![Build Status](https://travis-ci.org/kalinon/cli.cr.svg?branch=master)](https://travis-ci.org/kalinon/cli.cr)
 
 ## Installation
 

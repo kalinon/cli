@@ -1,4 +1,4 @@
-require "../../src/cli"
+require "../../../src/cli"
 
 class Command < Cli::Command
   def run
@@ -6,6 +6,6 @@ class Command < Cli::Command
   end
 end
 
-at_exit {|code| puts ":) #{code}"; LibC.exit 0 }
+at_exit { |code| puts ":) #{code}"; LibC.exit 0 }
 
 Command.run

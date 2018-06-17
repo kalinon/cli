@@ -4,7 +4,9 @@ module Cli
     @__cli_command : CommandBase?
 
     # Returns a related command instance.
-    def command; __cli_command; end
+    def command
+      __cli_command
+    end
 
     # :nodoc:
     def initialize(argv, @__cli_command)

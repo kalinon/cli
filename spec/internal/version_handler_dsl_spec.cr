@@ -5,6 +5,7 @@ module CliInternalVersionHandlerDslFeature
 
   class Default < Cli::Command
     version "1.0.0"
+
     class Options
       version
     end
@@ -12,6 +13,7 @@ module CliInternalVersionHandlerDslFeature
 
   class Specific < Cli::Command
     version "1.0.0"
+
     class Options
       version "--show-version", desc: "version!"
     end

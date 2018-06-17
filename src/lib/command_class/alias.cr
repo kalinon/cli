@@ -6,6 +6,7 @@ class Cli::CommandClass
     end
 
     @real_command : CommandClass?
+
     def real_command
       @real_command ||= supercommand.subcommands[@real_name]
     end

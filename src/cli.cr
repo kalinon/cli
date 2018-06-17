@@ -15,15 +15,15 @@ module Cli
   def self.new_default_io
     IoHash.new.tap do |io|
       io[:out] = if test?
-        Ios::Pipe.new(read_blocking: false, write_blocking: true)
-      else
-        STDOUT
-      end
+                   Ios::Pipe.new(read_blocking: false, write_blocking: true)
+                 else
+                   STDOUT
+                 end
       io[:err] = if test?
-        Ios::Pipe.new(read_blocking: false, write_blocking: true)
-      else
-        STDERR
-      end
+                   Ios::Pipe.new(read_blocking: false, write_blocking: true)
+                 else
+                   STDERR
+                 end
     end
   end
 end

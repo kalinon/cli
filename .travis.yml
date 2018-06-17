@@ -1,7 +1,5 @@
 language: crystal
-
+install:
+- shards install
 script:
-- bin/test
-
-after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ]; then bin/deploy_doc; fi
+- crystal spec

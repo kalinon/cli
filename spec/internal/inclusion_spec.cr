@@ -15,7 +15,7 @@ module CliInternalInclusionFeature
       arg "arg", desc: "description", any_of: {
         {"a", {desc: "foo"}},
         {"b", "bar"},
-        {"c"}
+        {"c"},
       }
       help
     end
